@@ -20,7 +20,7 @@ export default function MainPage() {
 
     return (
         <>
-            <Button variant="danger" onClick={modalHandler}>Add Post</Button>{' '}
+            <Button variant="success" className="m-2" onClick={modalHandler}>Add Post</Button>{' '}
             <MyTable posts={posts}/>
             <AddPost
                 show={showModal}

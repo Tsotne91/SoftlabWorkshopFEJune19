@@ -18,7 +18,7 @@ export default function AddPost(props) {
     const onSubmit = async () => {
        await axios.post("http://localhost:81/posts/", formValues);
        props.modalHandler();
-       window.parent.reload();
+      window.parent.location.reload();
     }
 
     return (
